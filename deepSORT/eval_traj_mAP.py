@@ -177,6 +177,7 @@ def prepare_tracking_results(tracking_results_dir,min_frames_th,max_proposal,sco
                 }
             )
         tracking_results.update({video_name:result_per_video})
+    return tracking_results
     
 def reset_category(only_pos):
     if only_pos:
@@ -194,7 +195,7 @@ if __name__ == "__main__":
     tracking_results_dir = "/home/gkf/project/deepSORT/tracking_results/miss60_minscore0p3/VidORval_freq1"
     annotation_dir = "/home/gkf/project/deepSORT/datasets/vidor-dataset/annotation/validation"
     
-    only_pos=False
+    only_pos=True
     category_map = reset_category(only_pos)
 
     gt_results = prepare_gt(annotation_dir,category_map)
@@ -214,7 +215,7 @@ if __name__ == "__main__":
 
 
 ## ----------- MEGA inference freq1 -----------
-# deepSORT/tracking_results/VidORval_freq1_m60s0.3 mean AP 0.1248
+# deepSORT/tracking_results/VidORval_freq1_m60s0.3 mean AP  mean AP  0.1248
 
 # /home/gkf/project/vidvrd-mff/ORval_traj.pkl  mean AP  0.0882
 # /home/gkf/project/vidvrd-mff/ORval_traj_FG.pkl (only consider bbox postion) mean AP 0.1664   
