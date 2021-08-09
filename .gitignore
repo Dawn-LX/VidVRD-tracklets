@@ -13,6 +13,9 @@ _ext
 *.ipynb
 **/.ipynb_checkpoints/
 
+# NOTES
+
+*notes.md
 
 # Pycharm editor settings
 .idea
