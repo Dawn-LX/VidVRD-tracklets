@@ -1,0 +1,30 @@
+MODEL:
+  VID:
+    METHOD: "mega"
+    ROI_BOX_HEAD:
+      ATTENTION:
+        ENABLE: True
+        STAGE: 3
+  META_ARCHITECTURE: "GeneralizedRCNNMEGA"
+  WEIGHT: "catalog://ImageNetPretrained/MSRA/R-101"
+  BACKBONE:
+    CONV_BODY: "R-101-C4"
+  ROI_BOX_HEAD:
+    FEATURE_EXTRACTOR: "MEGAFeatureExtractor"
+    PREDICTOR: "FPNPredictor"
+  ROI_HEADS:
+    SCORE_THRESH: 0.1
+DATASETS:
+  TRAIN: ("COCO_train_34classes", "COCO_valmini_34classes","VidORtrain_freq32")
+  # 58890 + 25407 + 226781 = 311078, 31w
+  TEST: ("VidORval_freq1_0024",)
+SOLVER:
+  BASE_LR: 0.001
+  WEIGHT_DECAY: 0.0001
+  STEPS: (120000, )
+  MAX_ITER: 180000
+  IMS_PER_BATCH: 4
+  WARMUP_ITERS: 500
+TEST:
+  IMS_PER_BATCH: 1
+  DETECTIONS_PER_IMG: 300
