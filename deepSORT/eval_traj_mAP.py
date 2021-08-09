@@ -1,6 +1,5 @@
 import os
 import json
-from unicodedata import category
 import numpy as np
 import torch
 
