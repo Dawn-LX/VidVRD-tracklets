@@ -57,12 +57,12 @@ class ROIAlign(nn.Module):
 
     @amp.float_function  
     def forward(self, input, rois):
-        # return roi_align(
-        #     input, rois, self.output_size, self.spatial_scale, self.sampling_ratio
-        # )
-        return torchvision.ops.roi_align(
+        return roi_align(
             input, rois, self.output_size, self.spatial_scale, self.sampling_ratio
-        )#ChangeNote
+        )
+        # return torchvision.ops.roi_align(
+        #     input, rois, self.output_size, self.spatial_scale, self.sampling_ratio
+        # )#ChangeNote
 
     def __repr__(self):
         tmpstr = self.__class__.__name__ + "("
