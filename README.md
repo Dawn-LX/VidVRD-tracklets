@@ -22,7 +22,6 @@ We release the object tracklets for [VidOR](https://xdshang.github.io/docs/vidor
 │   └── ...
 ├── MEGA
 │   ├── ... 
-│   ├── ...
 │   └── ...
 ```
 Please refer to `deepSORT/tracking_results/readme.md` for more details
@@ -112,10 +111,6 @@ The object tracklets generation pipeline mainly consists of two parts: ``MEGA`` 
 
 ## Train MEGA for VidOR by yourself
 
-really ? 
-
-training instructions coming soon...
-
 1. Download MS-COCO and put them as shown in above.
 
 2. Run `python MEGA/tools/extract_coco.py` to extract annotations for COCO in VidOR, which results in `COCO_train_34classes.pkl` and `COCO_valmini_34classes.pkl`
@@ -130,3 +125,5 @@ training instructions coming soon...
         --config-file MEGA/configs/MEGA/vidor_R_101_C4_MEGA_1x_4gpu.yaml \
         OUTPUT_DIR MEGA/training_dir/COCO34ORfreq32_4gpu
 ```
+
+More detailed training instructions will be updated soon...
