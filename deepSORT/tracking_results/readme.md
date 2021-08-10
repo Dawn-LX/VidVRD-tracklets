@@ -3,7 +3,7 @@
 - you can download the object tracklets for VidOR dataset [here](https://drive.google.com/drive/folders/1wWkzHlhYcZPQR4fUMTTJEn2SVVnhGFch?usp=sharing)
 - the object bounding boxes and categories are obtained by MEGA
 - the tracking algorithm we used is deepSORT
-- these tracklets (these .npy files) only contain tracklet postions and object categories.
+- these tracklets (these `.npy` files) only contain tracklet postions and object categories.
 - the appearance features (e.g., RoI pooled feature) for each bbox are not released due their large capacity.
 - please refer to ``format_demo.py`` for detailed format.
 

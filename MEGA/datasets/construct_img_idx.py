@@ -1,10 +1,10 @@
 import os
 import json
 from tqdm import tqdm
-img_path = "datasets/vidor-dataset/val_frames"
-ann_dir = "datasets/vidor-dataset/annotation/validation"
-freq = 32
-save_file = "datasets/vidor-dataset/img_index/VidORval_freq"+ str(freq) +".txt"
+img_path = "MEGA/datasets/vidor-dataset/val_frames"
+ann_dir = "MEGA/datasets/vidor-dataset/annotation/validation"
+freq = 1
+save_file = "MEGA/datasets/vidor-dataset/img_index/VidORval_freq"+ str(freq) +".txt"
 video_name_list = os.listdir(img_path)
 video_name_list = sorted(video_name_list)
 print(len(video_name_list))

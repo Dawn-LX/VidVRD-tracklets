@@ -5,9 +5,9 @@ import numpy
 import json
 from tqdm import tqdm
 
-video_ann_path = "datasets/vidor-dataset/annotation/validation"
-predictions_path = "training_dir/COCO34ORfreq32_4gpu/inference_180k/inference/VidORval_freq1/predictions.pth"
-save_path = "mega_boxfeatures/VidORval_freq1.pkl"
+video_ann_path = "MEGA/datasets/vidor-dataset/annotation/validation"
+predictions_path = "MEGA/training_dir/COCO34ORfreq32_4gpu/inference/inference/VidORval_freq1/predictions.pth"
+save_path = "MEGA/mega_boxfeatures/VidORval_freq1.pkl"
 print("save_path==",save_path)
 # assert os.path.exists(save_path)
 print("loading predictions...")
