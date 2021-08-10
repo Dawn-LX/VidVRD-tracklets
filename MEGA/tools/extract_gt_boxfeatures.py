@@ -770,7 +770,7 @@ def invesgate_anno(part_id):
     
     img_index = "datasets/vidor-dataset/img_index/VidORtrain_freq1_part{:02d}.txt".format(part_id)
     with open(img_index) as f:
-        lines = [x.strip().split(" ") for x in f.readlines()]  # .strip() 去除字符串首尾的空格
+        lines = [x.strip().split(" ") for x in f.readlines()]  
 
     image_set_index = ["%s/%06d" % (x[0], int(x[1])) for x in lines] # e.g., 0000_2401075277/000010   # 代表每张图片的名字
     pattern = [x[0] + "/%06d" for x in lines]                        # e.g., 0000_2401075277/%06d    # 代表每个video中图片名字的pattern
@@ -856,15 +856,3 @@ if __name__ == "__main__":
 
     extract_VidOR_gt_features(part_id,gpu_id)
     # python tools/extract_gt_boxfeatures.py --part_id 8 --gpu_id 1
-    # 10.214.223.101 (kgl-6):
-    # part1cuda3
-    # part8cuda2
-    
-
-    # 10.214.223.109 (kgl-3):
-    # part2cuda0
-    # part3cuda1
-    # part4cuda2
-    # part5cuda3
-    # part6cuda0
-    # part7cuda0
