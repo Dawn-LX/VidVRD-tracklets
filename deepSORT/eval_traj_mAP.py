@@ -215,8 +215,7 @@ if __name__ == "__main__":
 
 
 ## ----------- MEGA inference freq1 -----------
-# deepSORT/tracking_results/VidORval_freq1_m60s0.3 mean AP  mean AP  0.1248
+# deepSORT/tracking_results/VidORval_freq1_m60s0.3 mean AP  0.1248 (Only postion: mean AP  0.2371)
 
-# /home/gkf/project/vidvrd-mff/ORval_traj.pkl  mean AP  0.0882
-# /home/gkf/project/vidvrd-mff/ORval_traj_FG.pkl (only consider bbox postion) mean AP 0.1664   
+  
 
