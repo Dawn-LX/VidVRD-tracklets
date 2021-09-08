@@ -1,5 +1,7 @@
 
 # VidVRD-tracklets
+We won 1st place of Video Relation Understanding (VRU) Grand Challenge in ACM Multimedia 2021. The corresponding technical report: [here](https://arxiv.org/abs/2108.08669).
+
 This repository contains codes for Video Visual Relation Detection (VidVRD) tracklets generation based on [MEGA](https://github.com/Scalsol/mega.pytorch) and [deepSORT](https://github.com/nwojke/deep_sort). These tracklets are also suitable for [ACM MM Visual Relation Understanding (VRU) Grand Challenge](https://videorelation.nextcenter.org/) (which is base on the [VidOR dataset](https://xdshang.github.io/docs/vidor.html)).
 
 If you are only interested in the generated tracklets, ​you can ignore these codes and download them directly from [here](https://drive.google.com/drive/folders/1wWkzHlhYcZPQR4fUMTTJEn2SVVnhGFch?usp=sharing)
