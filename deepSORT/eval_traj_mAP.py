@@ -143,8 +143,8 @@ def prepare_tracking_results(tracking_results_dir,min_frames_th,max_proposal,sco
         index = torch.where(scores > score_th)[0]
         # assert len(index) > 0
         if len(index) == 0:
-            print("video:{} has no proposal after score clipping (score_th={:.2f})".format(video_name,score_th))
-            proposal_results.update({video_name:[]})
+            print("video:{} has no tracklets after score clipping (score_th={:.2f})".format(video_name,score_th))
+            tracking_results.update({video_name:[]})
             continue
 
 
