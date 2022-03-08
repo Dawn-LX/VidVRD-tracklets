@@ -195,7 +195,7 @@ if __name__ == "__main__":
     tracking_results_dir = "/home/gkf/project/deepSORT/tracking_results/miss60_minscore0p3/VidORval_freq1"
     annotation_dir = "/home/gkf/project/deepSORT/datasets/vidor-dataset/annotation/validation"
     
-    only_pos=True
+    only_pos=False
     category_map = reset_category(only_pos)
 
     gt_results = prepare_gt(annotation_dir,category_map)
@@ -216,6 +216,3 @@ if __name__ == "__main__":
 
 ## ----------- MEGA inference freq1 -----------
 # deepSORT/tracking_results/VidORval_freq1_m60s0.3 mean AP  0.1248 (Only postion: mean AP  0.2371)
-
-  
-
