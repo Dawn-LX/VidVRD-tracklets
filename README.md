@@ -6,6 +6,7 @@ This repository contains codes for Video Visual Relation Detection (VidVRD) trac
 
 If you are only interested in the generated tracklets, ​you can ignore these codes and download them directly from [here](https://drive.google.com/drive/folders/1wWkzHlhYcZPQR4fUMTTJEn2SVVnhGFch?usp=sharing)
 
+aaaa
 
 ## Download generated tracklets directly
 We release the object tracklets for [VidOR](https://xdshang.github.io/docs/vidor.html) train/validation/test set. You can download the tracklets [here](https://drive.google.com/drive/folders/1wWkzHlhYcZPQR4fUMTTJEn2SVVnhGFch?usp=sharing), and put them in the following folder as 
