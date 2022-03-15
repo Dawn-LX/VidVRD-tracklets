@@ -1,3 +1,6 @@
+# Update
+We propose a new VidSGG framework: [Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs](https://arxiv.org/abs/2112.04222), which is accepted by CVPR2022. code is released [here](https://github.com/Dawn-LX/VidSGG-BIG).
+
 
 # VidVRD-tracklets
 We won the 1st place of Video Relation Understanding (VRU) Grand Challenge in ACM Multimedia 2021. The corresponding technical report: [here](https://dl.acm.org/doi/10.1145/3474085.3479231) or [arXiv version](https://arxiv.org/abs/2108.08669).
@@ -6,7 +9,6 @@ This repository contains codes for Video Visual Relation Detection (VidVRD) trac
 
 If you are only interested in the generated tracklets, ​you can ignore these codes and download them directly from [here](https://drive.google.com/drive/folders/1wWkzHlhYcZPQR4fUMTTJEn2SVVnhGFch?usp=sharing)
 
-aaaa
 
 ## Download generated tracklets directly
 We release the object tracklets for [VidOR](https://xdshang.github.io/docs/vidor.html) train/validation/test set. You can download the tracklets [here](https://drive.google.com/drive/folders/1wWkzHlhYcZPQR4fUMTTJEn2SVVnhGFch?usp=sharing), and put them in the following folder as 
