@@ -131,4 +131,12 @@ The object tracklets generation pipeline mainly consists of two parts: ``MEGA`` 
         OUTPUT_DIR MEGA/training_dir/COCO34ORfreq32_4gpu
 ```
 
-More detailed training instructions will be updated soon...
+
+## Extract the bbox features based on the given bbox positions
+
+- refer to `MEGA/tools/extract_gt_boxfeatures.py`
+- **some notes**
+
+    The MEGA code is so fucking complex. When I extracting the bbox features, I just run MEGA inference to obtain the bbox positions and store the bbox features (RoI features) for each frame simultaneously.
+
+    Again, the MEGA code is so fucking complex, Although I wrote the code `extract_gt_boxfeatures.py`, I can not make sure the feature extracted based on given bbox are the same as stored simultaneously by MEGA inference. There are some random shuffle in the memory bank of MEGA.
