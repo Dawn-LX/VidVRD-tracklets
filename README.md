@@ -140,3 +140,14 @@ The object tracklets generation pipeline mainly consists of two parts: ``MEGA`` 
     The MEGA code is so fucking complex. When I extracting the bbox features, I just run MEGA inference to obtain the bbox positions and store the bbox features (RoI features) for each frame simultaneously.
 
     Again, the MEGA code is so fucking complex, Although I wrote the code `extract_gt_boxfeatures.py`, I can not make sure the feature extracted based on given bbox are the same as stored simultaneously by MEGA inference. There are some random shuffle in the memory bank of MEGA.
+
+
+If our work is helpful for your research, please cite our publication:
+```
+@inproceedings{gao2021classification,
+  title={Classification-Then-Grounding: Reformulating Video Scene Graphs as Temporal Bipartite Graphs},
+  author={Gao, Kaifeng and Chen, Long and Niu, Yulei and Shao, Jian and Xiao, Jun},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  year={2022}
+}
+```
